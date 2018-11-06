@@ -194,6 +194,13 @@ function updateURL(state) {
         +'/'+options + embed + theme
       )
     break
+    case 'gist':
+      history.replace('/'+view
+        +'/gist:'
+        +region.id
+        +'/'+options + embed + theme
+      )
+    break
     default:
       throw new Error('unknown region type', region)
     }
@@ -222,6 +229,12 @@ function parseRegionFromUrl(regionString) {
       return {
         type: 'hot',
         id: +regionContent
+      }
+    break
+    case 'gist':
+      return {
+        type: 'gist',
+        id: regionContent
       }
     break
     default:

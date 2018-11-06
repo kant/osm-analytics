@@ -95,7 +95,7 @@ The above visualization can be generated using a specific URL structure:
 `https://osm-analytics.org/#/compare/<region>/<start_year>...<end_year>/<feature_layer>/embed/<theme_name>`
 
 - __iframe_base_url__ (`http://osm-analytics.org`)
-- __region__ the area of interest the embedded map is shown for. Can be a bounding box (`bbox:110.28050,-7.02687,110.48513,-6.94219`), an [encoded polyline](https://www.npmjs.com/package/@mapbox/polyline) of a polygon (e.g. `polygon:ifv%7BDndwkBx%60%40aYwQev%40sHkPuf%40ss%40%7BfA_%40uq%40xdCn%7D%40%5E`)), or a hot project id (e.g. `hot:4053`)
+- __region__ the area of interest the embedded map is shown for. Can be a bounding box (`bbox:110.28050,-7.02687,110.48513,-6.94219`), an [encoded polyline](https://www.npmjs.com/package/@mapbox/polyline) of a polygon (e.g. `polygon:ifv%7BDndwkBx%60%40aYwQev%40sHkPuf%40ss%40%7BfA_%40uq%40xdCn%7D%40%5E`)), or a hot project id (e.g. `hot:4053`) or a link to a github gist that contains a `polygon.geojson` file (e.g. `gist:36ea172ef996a44d36a554383d5fb4fa`).
 - __start_year__ (`2016`) represents the start year of an OpenDRI project
 - __end_year__ (`now`) represents the end year of an OpenDRI project. `now` can also be provided to compare with latest OSM data
 - __feature_layer__ (`buildings`) compare `buildings`, `highways` or `waterways`
