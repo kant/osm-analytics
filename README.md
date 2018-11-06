@@ -30,7 +30,7 @@ The data from these vector tiles is used to display the features on the map and 
 Data Sampling
 -------------
 
-The aggregated bins contained in the lower zoom level vector tiles contain the absolute number (or total length for linear obejcts) of features in the respective cell which is used to display a basic *heatmap* style map. In addition to that, each cell contains a set of samples of the properties of the individual features that went into the respective cell (i.e. timestamp samples, user experience samples). This is necessary in order to limit the number of features to transfer to the browser.
+The aggregated bins contained in the lower zoom level vector tiles contain the absolute number (or total length for linear objects) of features in the respective cell which is used to display a basic *heatmap* style map. In addition to that, each cell contains a set of samples of the properties of the individual features that went into the respective cell (i.e. timestamp samples, user experience samples). This is necessary in order to limit the number of features to transfer to the browser.
 
 These data samples represent the statistical distribution of the constituent data in each cell and allow one to reconstruct the distribution of the data in an arbitrary region. They also allow one to extrapolate the number of features that fall into an given property interval (e.g. a date range).
 
